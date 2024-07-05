@@ -1,0 +1,284 @@
+@font-face { font-family: "Hanken Grotesk"; src: url(./assets/fonts/HankenGrotesk-VariableFont_wght.ttf); }
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+*::before,
+*::after {
+    box-sizing: inherit;
+}
+
+:root {
+        /* COLOR PALETTE */
+
+    /* PRIMARY */
+    --light-red-color: hsl(0, 100%, 67%);
+    --light-red-color-lighter: hsl(0, 100%, 98%);
+    --orangey-yellow-color: hsl(39, 100%, 56%);
+    --orangey-yellow-color-lighter: hsl(39, 100%, 96%);
+    --green-teal-color: hsl(166, 100%, 37%);
+    --green-teal-color-lighter: hsl(166, 100%, 96%);
+    --cobalt-blue-color: hsl(234, 85%, 45%);
+    --cobalt-blue-color-lighter: hsl(234, 85%, 96%);
+
+    /* GRADIENTS */
+    --light-slate-blue-color: hsl(252, 100%, 63%);
+    --light-royal-blue-color: hsl(241, 81%, 54%);
+
+    --violet-blue-color: hsla(256, 72%, 46%, 1);
+    --persian-blue-color: hsla(241, 72%, 46%, 0);
+
+    /* NEUTRAL */
+    --white-color: hsl(0deg, 0%, 100%);
+    --pale-blue-color: hsl(221, 100%, 96%);
+    --light-lavender-color: hsl(241, 100%, 89%);
+    --light-lavender-color-darker: hsl(241, 100%, 75%);
+    --dark-gray-blue-color: hsl(224, 30%, 27%);
+
+        /* TYPOGRAPHY */
+    --font-weight-low: 500;
+    --font-weight-high: 700;
+    --font-weight-very-high: 800;
+}
+
+html {
+    height: 100%;
+}
+
+body {
+    min-height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    font-family: "Hanken Grotesk";
+    font-weight: var(--font-weight-very-high);
+    background-color: var(--white-color);
+}
+
+main {
+    display: flex;
+    background-color: var(--white-color);
+    max-width: 735px;
+    --border-radius-main: 36px;
+    border-radius: var(--border-radius-main);
+    margin: 30px;
+
+    -webkit-box-shadow: 10px 14px 84px -45px rgba(0,0,0,0.75);
+    -moz-box-shadow: 10px 14px 84px -45px rgba(0,0,0,0.75);
+    box-shadow: 10px 14px 84px -45px rgba(0,0,0,0.75);
+}
+
+/* RESULTS SECTION STYLING */
+.results-section {
+    flex-basis: 367.5px;
+    flex-grow: 0;
+    background-image: linear-gradient(to bottom, var(--light-slate-blue-color), var(--light-royal-blue-color));
+    border-radius: var(--border-radius-main);
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 40px 60.3px 55px 60.3px;
+}
+
+.results-section__title {
+    color: var(--light-lavender-color);
+    margin-block-end: 35px;
+}
+
+/* CIRCLE WITH NUMBERS STYLING */
+.results-section__numbers {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+    --circle-radius: 99.31px;
+    width: calc(var(--circle-radius) * 2);
+    height: calc(var(--circle-radius) * 2);
+    border-radius: var(--circle-radius);
+
+    margin-block-end: 25px;
+
+    background-image: linear-gradient(to top, var(--persian-blue-color), var(--violet-blue-color));
+}
+
+.results-section__numbers__user-score {
+    color: var(--white-color);
+    font-weight: var(--font-weight-very-high);
+    font-size: 70px;
+}
+
+.results-section__numbers__max-score {
+    color: var(--light-lavender-color-darker);
+    font-size: 18px;
+}
+/* --------------------------------------------------------------- */
+
+/* RESULTS FEEDBACK STYLING */
+.results-section__feedback {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+}
+
+.results-section__feedback__user-grade {
+    color: var(--white-color);
+    font-size: 32px;
+    font-weight: var(--font-weight-high);
+}
+
+.results-section__feedback__score-comparison {
+    text-align: center;
+    color: var(--light-lavender-color);
+    font-size: 18px;
+    font-weight: var(--font-weight-low);
+}
+/* ----------------------------------------------------------- */
+/* ----------------------------------------------------------- */
+
+
+/* SUMMARY SECTION STYLING */
+.summary-section {
+    flex-basis: 367.5px;
+    flex-grow: 0;
+    display: flex;
+    flex-direction: column;
+    padding: 40px;
+}
+
+.summary-section__title {
+    color: var(--dark-gray-blue-color);
+    margin-block-end: 30px;
+}
+
+
+/* SKILLS SECTION GENERAL STYLING */
+.summary-section__skills {
+    font-size: 19px;
+    font-weight: var(--font-weight-low);
+    margin-block-end: 28px;
+}
+
+.summary-section__skills__skill-sets {
+    margin-block-end: 20px;
+    padding-block: 10px;
+    padding-inline: 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-radius: 12px;
+
+    list-style-type: none;
+}
+
+.summary-section__skills__skill-sets > li:nth-child(1) {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+}
+
+.summary-section__skills__skill-sets > li:nth-child(1):before {
+    align-self: flex-end;
+    padding-block-start: 6px;
+}
+
+.summary-section__skills__skill-sets > li:nth-child(2) .nominator {
+    color: var(--dark-gray-blue-color);
+    font-weight: var(--font-weight-high);
+}
+
+.summary-section__skills__skill-sets > li:nth-child(2) .denominator {
+    color: lightslategray;
+    font-weight: var(--font-weight-high);
+}
+
+
+/* INDIVIDUAL STYLING FOR EACH SKILL */
+
+/* "REACTION" STYLING */
+.summary-section__skills__skill-sets--reaction {
+    background-color: var(--light-red-color-lighter);
+    color: var(--light-red-color);
+}
+
+.summary-section__skills__skill-sets--reaction > li:nth-child(1):before {
+    content: url('./assets/images/icon-reaction.svg');
+}
+
+/* "MEMORY" STYLING */
+.summary-section__skills__skill-sets--memory {
+    background-color: var(--orangey-yellow-color-lighter);
+    color: var(--orangey-yellow-color);
+}
+
+.summary-section__skills__skill-sets--memory > li:nth-child(1):before {
+    content: url('./assets/images/icon-memory.svg');
+}
+
+/* "VERBAL" STYLING */
+.summary-section__skills__skill-sets--verbal {
+    background-color: var(--green-teal-color-lighter);
+    color: var(--green-teal-color);
+}
+
+.summary-section__skills__skill-sets--verbal > li:nth-child(1):before {
+    content: url('./assets/images/icon-verbal.svg');
+}
+
+/* "VISUAL" STYLING */
+.summary-section__skills__skill-sets--visual {
+    background-color: var(--cobalt-blue-color-lighter);
+    color: var(--cobalt-blue-color);
+}
+
+.summary-section__skills__skill-sets--visual > li:nth-child(1):before {
+    content: url('./assets/images/icon-visual.svg');
+}
+
+/* ------------------------------------------------------------ */
+/* ------------------------------------------------------------ */
+
+/* "CONTINUE" BUTTON STYLING */ 
+.summary-section__continue-button {
+    font-size: 17px;
+    font-weight: var(--font-weight-high);
+    color: var(--white-color);
+    padding-block: 15px; 
+    border-radius: 30px;
+    border: 0;
+    background-color: var(--dark-gray-blue-color);
+}
+
+.summary-section__continue-button:hover {
+    background-image: linear-gradient(to bottom, var(--light-slate-blue-color), var(--light-royal-blue-color));
+    cursor: pointer;
+}
+
+.summary-section__continue-button:focus {
+    background-image: linear-gradient(to bottom, var(--light-slate-blue-color), var(--light-royal-blue-color));
+}
+/* ----------------------------------------------------------- */
+
+
+/* RESPONSIVE */
+@media only screen and (max-width: 720px) {
+    main {
+        flex-direction: column;
+        width: 100%;
+        height: 100%;
+        margin: 0;
+        border-radius: 0;
+    }
+
+    .results-section {
+        border-top-left-radius: 0;
+        border-top-right-radius: 0;
+        padding: 40px 40px 55px 40px; 
+    }
+}

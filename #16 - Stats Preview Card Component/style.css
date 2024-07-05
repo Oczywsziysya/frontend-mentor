@@ -1,0 +1,200 @@
+            /* SETUP */
+
+@font-face { font-family: "Inter"; src: url("./fonts/Inter.ttf"); }
+@font-face { font-family: "Lexend Deca"; src: url("./fonts/lexend-deca.ttf"); }
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+*::before,
+*::after {
+    box-sizing: inherit;
+}
+
+:root {
+        /* COLOR PALETTE */
+    /* PRIMARY */
+    --very-dark-blue-color: hsl(233, 47%, 7%);
+    --dark-desaturated-blue-color: hsl(244, 38%, 16%);
+    --soft-violet-color: hsl(277, 64%, 61%);
+    /* NEUTRAL */
+    --white-color: hsl(0deg, 0%, 100%);
+    --slightly-transparent-white-color: hsla(0, 0%, 100%, 0.75);
+    --transparent-white-color: hsla(0, 0%, 100%, 0.6);
+
+        /* TYPOGRAPHY */
+    --font-weight-regular: 400;
+    --font-weight-high: 700;
+}
+
+html {
+    height: 100%;
+}
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    padding-inline: 80px;
+    padding-block: 87px;
+    min-height: 100%;
+
+    background-color: var(--very-dark-blue-color);
+
+    font-family: "Inter";
+    font-size: 0.9375rem;
+
+    /* RESPONSIVE */
+    @media only screen and (max-width: 1040px) {
+        padding-inline: clamp(23px, 19.098vw - 48.617px, 150px); /* 1040px --> 375px */
+    }
+}
+
+main {
+    display: flex;
+    overflow: hidden;
+
+    width: min(1110px, 100%);
+
+    background-color: var(--dark-desaturated-blue-color);
+    border-radius: 7px;
+
+    /* RESPONSIVE */
+    @media only screen and (max-width: 1040px) {
+        flex-direction: column;
+    }
+}
+
+
+
+
+
+
+
+
+            /* CARD CONTENT STYLING */
+.card-content {
+    display: flex;
+    flex-direction: column;
+
+    flex-basis: 570px;
+    padding-inline: clamp(40px, 13.913vw - 104.696px, 72px); /* 1270px -> 1040px */
+    /* 1270px is the point where the card starts to shrink, so the padding-inline will 
+    get smaller from this point only. */
+    padding-block-start: clamp(40px, 13.478vw - 100.174px, 71px); /* 1270px -> 1040px */
+    padding-block-end: clamp(40px, 10.435vw - 68.522px, 64px); /* 1270px -> 1040px */
+
+    /* RESPONSIVE */
+    @media only screen and (max-width: 1040px) {
+        flex-basis: auto;
+        align-items: center;
+        text-align: center;
+
+        padding-inline: clamp(24px, 2.406vw + 14.977px, 40px); /* 1040px -> 375px */
+    }
+
+
+    & h1 {
+        margin-block-end: 26px;
+
+        color: var(--white-color);
+        font-weight: var(--font-weight-high);
+        font-size: clamp(1.8rem, 1.5406rem + 1.1068vw, 2.26rem); /* 1040px -> 375px */
+
+        & span {
+            color: var(--soft-violet-color);
+        }
+    }
+
+
+
+    & p {
+        padding-inline-end: clamp(0px, 16.522vw - 171.826px, 38px); /* 1270px -> 1040px */
+        margin-block-end: clamp(50px, 8.696vw - 40.435px, 70px); /* 1270px -> 1040px */
+        
+        color: var(--slightly-transparent-white-color);
+        line-height: 1.67;
+        
+        /* RESPONSIVE */
+        @media only screen and (max-width: 1040px) {
+            padding-inline-start: clamp(0px, -1.203vw + 12.511px, 8px); /* 1040 -> 375px */
+            padding-inline-end: clamp(0px, -1.203vw + 12.511px, 8px) /* 1040px -> 375px */;
+        }
+    }
+
+
+
+    & .card-content__stats {
+        display: flex;
+        justify-content: space-between;
+
+        padding-inline-end: clamp(40px, 13.043vw - 95.652px, 70px); /* 1270px -> 1040px */
+
+        /* RESPONSIVE */
+        @media only screen and (max-width: 1040px) {
+            align-self: stretch;
+            justify-content: space-around;
+
+            padding-inline-end: 0;
+        }
+
+        @media only screen and (max-width: 600px) {
+            flex-direction: column;
+            gap: 35px;
+        }
+
+        & > * {
+            display: flex;
+            flex-direction: column;
+            align-items: flex-start;
+            gap: 6px;
+
+            /* RESPONSIVE */
+            @media only screen and (max-width: 1040px) {
+                align-items: center;
+            }
+
+
+            & span:nth-child(1) {
+                color: var(--white-color);
+                font-size: 1.52rem;
+                font-weight: var(--font-weight-high);
+            }
+
+
+            & span:nth-child(2) {
+                font-family: "Lexend Deca";
+                text-transform: uppercase;
+                color: var(--transparent-white-color);
+                letter-spacing: 1px;
+                font-size: 0.745rem;
+            }
+        }
+    }
+
+}
+
+picture {
+    flex-basis: 540;
+    background-color: var(--soft-violet-color);
+    
+    /* RESPONSIVE */
+    @media only screen and (max-width: 1040px) {
+        flex-basis: auto;
+        order: -1;
+    }
+    
+    & img {
+        display: block;
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        object-position: center;
+        opacity: 0.75;
+        mix-blend-mode: multiply;
+    }
+}

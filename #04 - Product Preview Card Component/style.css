@@ -1,0 +1,213 @@
+@font-face { font-family: "Montserrat"; src: url("./fonts/montserrat.ttf"); }
+@font-face { font-family: "Montserrat Italic"; src: url("./fonts/montserrat-italic.ttf"); }
+@font-face { font-family: "Fraunces"; src: url("./fonts/fraunces.ttf"); }
+@font-face { font-family: "Fraunces Italic"; src: url("./fonts/fraunces-italic.ttf"); }
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+*::before,
+*::after {
+    box-sizing: inherit;
+}
+
+:root {
+        /* COLOR PALETTE */
+    --dark-cyan-color: hsl(158, 36%, 37%);
+    --dark-cyan-color-darker: hsl(158, 23%, 24%);
+    --cream-color: hsl(30, 38%, 92%);
+    --very-dark-blue-color: hsl(212, 21%, 14%);
+    --dark-grayish-blue-color: hsl(228, 12%, 48%);
+    --white-color: hsl(0, 0%, 100%);
+
+        /* TYPOGRAPHY */
+    --font-weight-medium: 500;
+    --font-weight-high: 700;
+}
+
+html {
+    height: 100%;
+}
+
+body {
+    min-height: 100%;
+    font-weight: var(--font-weight-medium);
+    background-color: var(--cream-color);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+main {
+    max-width: 600px;
+    background-color: var(--white-color);
+    border-radius: 12px;
+    display: flex;
+    flex-wrap: wrap;
+    margin: 25px;
+}
+
+/* CARD IMAGE STYLING */
+main > picture {
+    flex-basis: 300px;
+}
+
+main > picture > img {
+    max-width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-top-left-radius: 12px;
+    border-bottom-left-radius: 12px;
+}
+/* --------------------------------------------- */
+
+
+/* CARD CONTENT STYLING */
+main > section {
+    flex-basis: 300px;
+    padding: 30px;
+    display: flex;
+    flex-direction: column;
+}
+
+
+/* CARD HEADER STYLING*/
+section > header > div {
+    font-family: "Montserrat";
+    text-transform: uppercase;
+    letter-spacing: 4px;
+    color: var(--dark-grayish-blue-color);;
+    font-size: 12px;
+    margin-block-end: 20px;
+}
+
+section > header > h1 {
+    font-size: 30px;
+    font-family: "Fraunces";
+    line-height: 1.1;
+    padding-inline-end: 40px;
+    color: var(--very-dark-blue-color);
+    margin-block-end: 30px;
+}
+/* ---------------------------------------------- */
+
+
+/* PRODUCT DESCRIPTION STYLING */
+.product-description > p {
+    font-size: 14px;
+    color: var(--dark-grayish-blue-color);
+    font-family: "Montserrat";
+    line-height: 1.65;
+    margin-block-end: 22px;
+}
+/* ------------------------------------------------ */
+
+
+/* PRODUCT PRICES STYLING*/
+.product-price {
+    margin-block-end: 25px;
+}
+
+.product-price > span {
+    font-family: "Fraunces";
+}
+
+.product-price > .product-price__discount {
+    color: var(--dark-cyan-color);
+    font-size: 32px;
+    font-weight: var(--font-weight-high);
+    margin-inline-end: 15px;
+}
+
+.product-price > .product-price__full {
+    text-decoration: line-through;
+    font-family: "Montserrat";
+    color: var(--dark-grayish-blue-color);
+    vertical-align: super;
+    font-size: 13px;
+}
+/* ---------------------------------------------------- */
+
+
+/* BUY BUTTON STYLING */
+button {
+    background-color: var(--dark-cyan-color);
+    font-family: "Montserrat";
+    padding-block: 14px;
+    border-radius: 8px;
+    font-size: 14px;
+    border: 0;
+}
+
+button:hover {
+    background-color: var(--dark-cyan-color-darker);
+    cursor: pointer;
+}
+
+button > img {
+    vertical-align: text-bottom;
+}
+
+button > span {
+    color: var(--white-color);
+    font-weight: var(--font-weight-high);
+    vertical-align: middle;
+    margin-inline-start: 8px;
+}
+/* ------------------------------------------- */
+/* ------------------------------------------- */
+
+@media only screen and (max-width: 650px) {
+    main {
+        flex-direction: column;
+    }
+
+    /* CARD IMAGE STYLING */
+    main > picture {
+        flex-basis: 200px
+    }
+    
+    main > picture > img {
+        width: 100%;        
+        object-fit: cover;
+        border-top-left-radius: 12px;
+        border-bottom-left-radius: 0;
+        border-top-right-radius: 12px;
+    }
+    /* ------------------------------------------ */
+
+
+    /* CARD CONTENT STYLING */
+    main > section {
+        padding: 20px;
+    }
+
+    /* CARD HEADER STYLING */
+    section > header > div {
+        margin-block-end: 10px;
+    }
+    
+    section > header > h1 {
+        padding-inline-end: 0;
+        margin-block-end: 12px
+    }
+    /* ------------------------------------------- */
+
+
+    /* PRODUCT DESCRIPTION STYLING */
+    .product-description > p {
+        margin-block-end: 14px;
+    }
+    /* ------------------------------------------- */
+
+
+    /* PRODUCT PRICES STYLING */
+    .product-price {
+        margin-block-end: 12px;
+    }
+    /* ------------------------------------------ */
+    /* ------------------------------------------ */
+}

@@ -1,0 +1,173 @@
+@font-face { font-family: "Big Shoulders Display"; src: url("./fonts/big-shoulders-display.ttf"); }
+@font-face { font-family: "Lexend Deca"; src: url("./fonts/lexend-deca.ttf"); }
+
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+*::after,
+*::before {
+    box-sizing: inherit;
+}
+
+:root {
+        /* COLOR PALETTE */
+    /* PRIMARY */
+    --bright-orange-color: hsl(31, 77%, 52%);
+    --dark-cyan-color: hsl(184, 100%, 22%);
+    --very-dark-cyan-color: hsl(179, 100%, 13%);
+    /* NEUTRAL */
+    --transparent-white-color: hsla(0, 0%, 100%, 0.75);
+    --very-light-gray-color: hsl(0, 0%, 95%);
+
+        /* TYPOGRAPHY */
+    --font-weight-low: 400;
+    --font-weight-high: 700;
+}
+
+html {
+    height: 100%;
+}
+
+body {
+    min-height: 100%;
+    font-family: "Lexend Deca";
+    font-size: 15px;
+    display: grid;
+    place-content: center;
+    background-color: var(--very-light-gray-color);
+}
+
+main {
+    display: flex;
+    border-radius: 3px;
+    max-width: 917.8px;
+    justify-content: center;
+    flex-wrap: wrap;
+    overflow: hidden;
+    border-radius: 6px;
+    margin: 30px;
+}
+
+/* COMMON STYLING FOR ALL SECTIONS */
+main > section {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    padding-inline: 48px;
+    padding-block: 42.1px;
+}
+
+main > section > header > img {
+    display: block;
+    margin-block-end: 34.21px;
+}
+
+main > section > header > div {
+    font-family: "Big Shoulders Display";
+    font-size: 39px;
+    color: var(--very-light-gray-color);
+    font-weight: var(--font-weight-high);
+    text-transform: uppercase;
+
+    margin-block-end: 28.95px;
+}
+
+main > section > p {
+    color: var(--transparent-white-color);
+    margin-block-end: 85.25px;
+    line-height: 1.65;
+}
+
+main > section > button {
+    background-color: white;
+    border: 2px solid white;
+
+    align-self: flex-start;
+    padding-block: 10px;
+    padding-inline: 30px;
+    border-radius: 40px;
+
+    font-weight: var(--font-weight-low);
+    font-size: 15.5px;
+    font-family: "Lexend Deca";
+
+    transition: background-color 0.4s ease-in-out;
+    transition: color 0.4s ease-in-out;
+}
+
+main > section > button:hover {
+    background-color: transparent;
+    color: white;
+    cursor: pointer;
+}
+
+/* SECTIONS INDIVIDUAL STYLING */
+
+/* SEDANS */
+.sedans {
+    background-color: var(--bright-orange-color);
+}
+
+.sedans button {
+    color: var(--bright-orange-color);
+}
+
+/* SUVS */
+.suvs {
+    background-color: var(--dark-cyan-color);
+}
+
+.suvs button {
+    color: var(--dark-cyan-color);
+}
+
+/* LUXURY */
+.luxury {
+    background-color: var(--very-dark-cyan-color);
+}
+
+.luxury button {
+    color: var(--very-dark-cyan-color);
+}
+
+@media only screen and (max-width: 860px) {
+    main {
+        flex-direction: column;
+        margin: 120px;
+    }
+
+    main > section > p {
+        margin-block-end: 40px;
+    }
+}
+
+@media only screen and (max-width: 700px) {
+    main {
+        margin-block: 100px;
+        margin-inline: 60px;
+    }
+
+    main > section > p {
+        margin-block-end: 30px;
+    }
+}
+
+@media only screen and (max-width: 600px) {
+    main {
+        margin-inline: 40px;
+    }
+
+    main > section > p {
+        margin-block-end: 25px;
+    }
+}
+
+@media only screen and (max-width: 400px) {
+    main {
+        margin-inline: 22px;
+    }
+}

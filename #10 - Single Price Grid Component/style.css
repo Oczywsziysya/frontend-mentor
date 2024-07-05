@@ -1,0 +1,253 @@
+@font-face { font-family: "Karla"; src: url("./fonts/karla.ttf"); }
+@font-face { font-family: "Karla Italic"; src: url("./fonts/karla-italic.ttf") }
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+*::before,
+*::after {
+    box-sizing: inherit;
+}
+
+:root {
+        /* COLOR PALETTE */
+
+    /* PRIMARY */ 
+    --cyan-color: hsl(179, 62%, 43%);
+    --cyan-color-lighter: hsl(179, 47%, 52%);
+    --bright-yellow-color: hsl(71, 73%, 54%);
+    /* NEUTRAL */
+    --light-gray-color: hsl(204, 43%, 93%);
+    --light-gray-color-darker: hsl(204, 43%, 85%);
+    --grayish-blue-color: hsl(218, 22%, 67%);
+    --white-color: hsl(0deg, 0%, 100%);
+
+        /* TYPOGRAPHY */
+    --font-weight-low: 400;
+    --font-weight-high: 700;
+}
+
+html {
+    height: 100%;
+}
+
+body {
+    min-height: 100%;
+    background-color: var(--light-gray-color);
+    display: grid;
+    place-content: center;
+
+    font-family: "Karla";
+}
+
+main {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-areas:
+        'join join'
+        'subscription why-us';
+    margin: 30px;
+    --cards-padding: 37px;
+    max-width: 633px;
+    border-radius: 8px;
+    overflow: hidden;
+    background-color: var(--white-color);
+
+    -webkit-box-shadow: 10px 10px 71px -39px rgba(0,0,0,0.75);
+    -moz-box-shadow: 10px 10px 71px -39px rgba(0,0,0,0.75);
+    box-shadow: 10px 10px 71px -39px rgba(0,0,0,0.75);
+}
+
+/* "JOIN" SECTION STYLING */
+
+.join {
+    grid-area: join;
+    display: flex;
+    flex-direction: column;
+    padding: var(--cards-padding);
+}
+
+.join__title {
+    font-weight: var(--font-weight-high);
+    font-size: 1.5rem;
+    color: var(--cyan-color);
+    margin-block-end: 25px;
+}
+
+.join__trial-period {
+    font-weight: var(--font-weight-high);
+    font-size: 1.12rem;
+    color: var(--bright-yellow-color);
+    margin-block-end: 15px;
+}
+
+.join__benefits {
+    font-size: 1rem;
+    color: var(--grayish-blue-color);
+}
+
+.join__benefits > p:nth-child(1) {
+    margin-block-end: 6px;
+}
+
+/* "SUBSCRIPTION" SECTION STYLING" */
+
+.subscription {
+    display: flex;
+    flex-direction: column;
+    padding: var(--cards-padding);
+    background-color: var(--cyan-color);
+    color: var(--white-color);
+}
+
+.subscription__title {
+    font-size: 1.1rem;
+    margin-block-end: 20px;
+}
+
+.subscription__pricing--month {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    margin-block-end: 8px;
+}
+
+.subscription__pricing--month > span:nth-child(1) {
+    font-weight: var(--font-weight-high);
+    font-size: 2.07rem;
+}
+
+.subscription__pricing--month > span:nth-child(2) {
+    color: var(--light-gray-color-darker);
+}
+
+.subscription__pricing--day {
+   margin-block-end: 30px;
+}
+
+.subscription__button {
+    color: var(--white-color);
+    background-color: var(--bright-yellow-color);
+    border: 0;
+    font-size: 1rem;
+    font-weight: var(--font-weight-high);
+    padding-block: 0.93em;
+    border-radius: 0.2em;
+
+    -webkit-box-shadow: 0px 5px 73px -16px rgba(0,0,0,0.75);
+    -moz-box-shadow: 0px 5px 73px -16px rgba(0,0,0,0.75);
+    box-shadow: 0px 5px 73px -16px rgba(0,0,0,0.75);
+}
+
+/* "WHY US" SECTION STYLING */
+
+.why-us {
+    padding: var(--cards-padding);
+    color: var(--white-color);
+    background-color: var(--cyan-color-lighter);
+}
+
+.why-us__title {
+    font-size: 1.1rem;
+    margin-block-end: 20px;
+}
+
+.why-us__benefits {
+    display: flex;
+    flex-direction: column;
+    gap: 4px;
+    list-style-type: none;
+
+    font-size: 0.87rem;
+    color: var(--light-gray-color);
+}
+
+/* RESPONSIVE */
+
+@media only screen and (max-width: 580px) {
+    html {
+        font-size: 15px;   
+        text-align: center;
+    }
+
+    main {
+        grid-template-columns: 1fr;
+        grid-template-areas:
+            'join'
+            'subscription'
+            'why-us';
+        border-radius: 6px;
+    }
+
+    main > section {
+        align-items: center;
+    }
+
+    .subscription__button {
+        width: 70%;
+    }
+}
+
+@media only screen and (max-width: 420px) {
+    html {
+        font-size: 13.5px;
+        text-align: start;
+    }
+
+    main {
+        --cards-padding: 25px;
+    }
+
+    main > section {
+        align-items: stretch;
+    }
+
+    /* "JOIN" SECTION STYLING */
+    .join {
+        padding: 32px var(--cards-padding) var(--cards-padding) var(--cards-padding);
+    }
+
+    .join__benefits {
+        line-height: 1.55;
+    }
+
+    .join__benefits > p:nth-child(1) {
+        display: inline;
+        margin-block-end: 0px;
+    }
+
+    .join__benefits > p:nth-child(2) {
+        display: inline;
+    }
+
+    /* "SUBSCRIPTION" SECTION STYLING */
+    .subscription__title {
+        font-size: 1.3rem;
+    }
+
+    .subscription__pricing--month > span:nth-child(2) {
+        font-size: 1.18rem;
+    }
+
+    .subscription__pricing--day {
+        font-size: 1.15rem;
+     }
+
+     .subscription__button {
+        align-self: stretch;
+        width: 100%;
+        font-size: 1.1rem;
+     }
+
+     /* "WHY US" SECTION STYLING */
+     .why-us__title {
+        font-size: 1.3rem;
+     }
+
+     .why-us__benefits {
+        font-size: 1rem;
+     }
+}

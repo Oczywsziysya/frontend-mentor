@@ -1,0 +1,129 @@
+@font-face { font-family: "Figtree"; src: url("./assets/fonts/Figtree-VariableFont_wght.ttf"); }
+@font-face { font-family: "Figtree Italic"; src: url("./assets/fonts/Figtree-Italic-VariableFont_wght.ttf"); }
+
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+*::before,
+*::after {
+    box-sizing: inherit;
+}
+
+:root {
+    /* COLOR PALETTE */
+    --yellow-color: hsl(47, 88%, 63%);
+    --white-color: hsl(0, 0%, 100%);
+    --grey-color: hsl(0, 0%, 50%);
+    --black-color: hsl(0, 0%, 7%);
+    
+    /* FONTS */
+    --regular-font: "Figtree";
+    --italic-font: "Figtree Italic";
+    --regular-font-weight: 500;
+    --bold-font-weight: 800;
+}
+
+html {
+    height: 100%;
+}
+
+body {
+    min-height: 100%;
+    background-color: var(--yellow-color);
+    color: var(--black-color);
+    font-family: var(--regular-font);
+    font-weight: var(--regular-font-weight);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+main {
+    max-width: 380px;
+    background-color: var(--white-color);
+    border-radius: 16px;
+    border: 1px solid var(--black-color);
+    padding: 22px;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+
+    box-shadow: 8px 8px var(--black-color);
+}
+
+main:hover {
+    box-shadow: 14px 14px var(--black-color);
+}
+
+main > img {
+    display: block;
+    width: 100%;
+    height: auto;
+    border-radius: 12px;
+}
+
+main > ul.tags-list {
+    display: flex;
+    list-style-type: none;
+    gap: 10px;
+    flex-wrap: wrap;
+}
+
+main > ul.tags-list > li.tags-list__tags {
+    background-color: var(--yellow-color);
+    font-weight: var(--bold-font-weight);
+    padding: 6px 12px;
+    border-radius: 5px;
+}
+
+main > time {
+
+}
+
+main > header > h1 {
+    font-size: 24px;
+    font-weight: var(--bold-font-weight);
+}
+
+main > header > h1:hover {
+    color: var(--yellow-color);
+}
+
+main > p {
+    font-size: 16px;
+    color: var(--grey-color);
+}
+
+main > address {
+    display: flex;
+    gap: 15px;
+    margin-top: 5px;
+}
+
+main > address > img {
+    display: inline-block;
+    max-width: 32px;
+    height: auto;
+}
+
+main > address > span[rel="author"] {
+    font-weight: var(--bold-font-weight);
+    font-family: var(--italic-font);
+    align-self: center;
+
+}
+
+/* RESPONSIVE */
+
+@media (max-width: 430px) {
+    main {
+        margin-inline: 25px;
+    }
+}
+
+/* Notice that (2 * margin-inline + main's width = 430px/breakpoint), so that 
+the transition will be natural and therefore there will be no "jumps" */
