@@ -35,10 +35,10 @@ Users should be able to:
 <div align="center"><img src="./screenshots/screenshot-desktop.png" width="320" /></div>
 
 #### Desktop (~1000 pixels width)
-![](./screenshots/desktop-screenshot-1000.png)
+<div align="center"><img src="./screenshots/desktop-screenshot-1000.png" width="320" /></div>
 
 #### Desktop (~850 pixels width)
-![](./screenshots/desktop-screenshot-850.png)
+<div align="center"><img src="./screenshots/desktop-screenshot-850.png" width="320" /></div>
 
 #### Tablet (~768 pixels width)
 <div align="center"><img src="./screenshots/screenshot-tablet.png" width="320" /></div>
