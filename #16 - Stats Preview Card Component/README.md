@@ -28,20 +28,20 @@ Users should be able to:
 ### Screenshot
 
 #### Desktop (~1440 pixels width)
-![](./screenshots/screenshot-desktop-1440.png)
+<div align="center"><img src="./screenshots/screenshot-desktop-1440.png" width="320" /></div>
 
 #### Desktop (~1040 pixels width)
-![](./screenshots/screenshot-desktop-1040.png)
+<div align="center"><img src="./screenshots/screenshot-desktop-1040.png" width="320" /></div>
 
 #### Tablet (~768 pixels width)
-![](./screenshots/screenshot-tablet-768.png)
+<div align="center"><img src="./screenshots/screenshot-tablet-768.png" width="320" /></div>
 
 #### Cellphone (~375 pixels width)
-![](./screenshots/screenshot-cellphone-375.png)
+<div align="center"><img src="./screenshots/screenshot-cellphone-375.png" width="320" /></div>
 
 ### Links
 
-- Live Site URL: [https://oczywsziysya.github.io/fem-stats-preview-card](https://oczywsziysya.github.io/fem-stats-preview-card)
+- Live Site URL: [https://oczywsziysya-fem-16.netlify.app](https://oczywsziysya-fem-16.netlify.app)
 
 ## My process
 

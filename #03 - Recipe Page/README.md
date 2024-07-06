@@ -20,14 +20,14 @@ This is a solution to the [Recipe page challenge on Frontend Mentor](https://www
 ### Screenshot
 
 #### Desktop
-![](./screenshots/screenshot-desktop.png)
+<div align="center"><img src="./screenshots/screenshot-desktop.png" width="320" /></div>
 
 #### Mobile (~375px width screen)
-![](./screenshots/screenshot-mobile.png)
+<div align="center"><img src="./screenshots/screenshot-mobile.png" width="320" /></div>
 
 ### Links
 
-- Live Site URL: [https://oczywsziysya.github.io/fem-recipe-page](https://oczywsziysya.github.io/fem-recipe-page)
+- Live Site URL: [https://oczywsziysya-fem-03.netlify.app](https://oczywsziysya-fem-03.netlify.app)
 
 ## My process
 

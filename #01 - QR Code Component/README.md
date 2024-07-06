@@ -16,13 +16,13 @@ available there.
 
 ### Screenshot
 
-![](./screenshots/screenshot-desktop.png)
+<div align="center"><img src="./screenshots/screenshot-desktop.png" width="320" /></div>
 
-![](./screenshots/screenshot-mobile.png)
+<div align="center"><img src="./screenshots/screenshot-mobile.png" width="320" /></div>
 
 ### Links
 
-- Live Site URL: [https://oczywsziysya.github.io/fem-qr-code-component](https://oczywsziysya.github.io/fem-qr-code-component)
+- Live Site URL: [https://oczywsziysya-fem-01.netlify.app](https://oczywsziysya-fem-01.netlify.app)
 
 ## My process
 

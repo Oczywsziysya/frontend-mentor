@@ -26,18 +26,18 @@ Users should be able to:
 ### Screenshot
 
 #### Desktop
-![](./screenshots/screenshot-desktop.png)
+<div align="center"><img src="./screenshots/screenshot-desktop.png" width="320" /></div>
 
 #### Desktop (active states)
-![](./screenshots/screenshot-desktop-active.png)
+<div align="center"><img src="./screenshots/screenshot-desktop-active.png" width="320" /></div>
 
 #### Cellphone (~375 pixels width)
-![](./screenshots/screenshot-cellphone.png)
+<div align="center"><img src="./screenshots/screenshot-cellphone.png" width="320" /></div>
 
 
 ### Links
 
-- Live Site URL: [https://oczywsziysya.github.io/fem-summary-card-component](https://oczywsziysya.github.io/fem-summary-card-component)
+- Live Site URL: [https://oczywsziysya-fem-14.netlify.app](https://oczywsziysya-fem-14.netlify.app)
 
 ## My process
 

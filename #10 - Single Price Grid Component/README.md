@@ -28,17 +28,17 @@ Users should be able to:
 ### Screenshot
 
 #### Desktop
-![](./screenshots/screenshot-desktop.png)
+<div align="center"><img src="./screenshots/screenshot-desktop.png" width="320" /></div>
 
 #### From ~580px to ~420px
-![](./screenshots/screenshot-tablet.png)
+<div align="center"><img src="./screenshots/screenshot-tablet.png" width="320" /></div>
 
 #### Cellphone (~375 pixels width)
-![](./screenshots/screenshot-cellphone.png)
+<div align="center"><img src="./screenshots/screenshot-cellphone.png" width="320" /></div>
 
 ### Links
 
-- Live Site URL: [https://oczywsziysya.github.io/fem-single-price-grid-component](https://oczywsziysya.github.io/fem-single-price-grid-component)
+- Live Site URL: [https://oczywsziysya-fem-10.netlify.app](https://oczywsziysya-fem-10.netlify.app)
 
 ## My process
 

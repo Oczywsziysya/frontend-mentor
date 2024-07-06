@@ -31,17 +31,17 @@ Users should be able to:
 ### Screenshot
 
 #### Desktop
-![](./screenshots/screenshot-desktop.png)
+<div align="center"><img src="./screenshots/screenshot-desktop.png" width="320" /></div>
 
 #### Tablet (~768 pixels width)
-![](./screenshots/screenshot-tablet.png)
+<div align="center"><img src="./screenshots/screenshot-tablet.png" width="320" /></div>
 
 #### Cellphone (~375 pixels width)
-![](./screenshots/screenshot-cellphone.png)
+<div align="center"><img src="./screenshots/screenshot-cellphone.png" width="320" /></div>
 
 ### Links
 
-- Live Site URL: [https://oczywsziysya.github.io/fem-four-card-feature-section](https://oczywsziysya.github.io/fem-four-card-feature-section)
+- Live Site URL: [https://oczywsziysya-fem-05-flexbox.netlify.app](https://oczywsziysya-fem-05-flexbox.netlify.app)
 
 ## My process
 

@@ -32,20 +32,20 @@ Users should be able to:
 ### Screenshot
 
 #### Desktop (~1366 pixels width)
-![](./screenshots/screenshot-desktop-1366.png)
+<div align="center"><img src="./screenshots/screenshot-desktop-1366.png" width="320" /></div>
 
 #### Desktop (~950 pixels width)
-![](./screenshots/screenshot-desktop-950.png)
+<div align="center"><img src="./screenshots/screenshot-desktop-950.png" width="320" /></div>
 
 #### Tablet (~768 pixels width)
-![](./screenshots/screenshot-tablet-768.png)
+<div align="center"><img src="./screenshots/screenshot-tablet-768.png" width="320" /></div>
 
 #### Cellphone (~375 pixels width)
-![](./screenshots/screenshot-cellphone-375.png)
+<div align="center"><img src="./screenshots/screenshot-cellphone-375.png" width="320" /></div>
 
 ### Links
 
-- Live Site URL: [https://oczywsziysya.github.io/fem-testimonials-grid-section](https://oczywsziysya.github.io/fem-testimonials-grid-section)
+- Live Site URL: [https://oczywsziysya-fem-06.netlify.app](https://oczywsziysya-fem-06.netlify.app)
 
 ## My process
 

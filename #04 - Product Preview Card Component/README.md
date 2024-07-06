@@ -31,17 +31,17 @@ Users should be able to:
 ### Screenshot
 
 #### Desktop
-![](./screenshots/screenshot-desktop.png)
+<div align="center"><img src="./screenshots/screenshot-desktop.png" width="320" /></div>
 
 #### Desktop (active states)
-![](./screenshots/screenshot-desktop-active.png)
+<div align="center"><img src="./screenshots/screenshot-desktop-active.png" width="320" /></div>
 
 #### Mobile (~375 pixels width)
-![](./screenshots/screenshot-mobile.png)
+<div align="center"><img src="./screenshots/screenshot-mobile.png" width="320" /></div>
 
 ### Links
 
-- Live Site URL: [https://oczywsziysya.github.io/fem-product-preview-card-component](https://oczywsziysya.github.io/fem-product-preview-card-component)
+- Live Site URL: [https://oczywsziysya-fem-04.netlify.app](https://oczywsziysya-fem-04.netlify.app)
 
 ## My process
 

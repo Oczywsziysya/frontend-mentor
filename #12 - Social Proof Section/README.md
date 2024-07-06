@@ -32,7 +32,7 @@ Users should be able to:
 ### Screenshot
 
 #### Desktop
-![](./screenshots/screenshot-desktop.png)
+<div align="center"><img src="./screenshots/screenshot-desktop.png" width="320" /></div>
 
 #### Desktop (~1000 pixels width)
 ![](./screenshots/desktop-screenshot-1000.png)
@@ -41,14 +41,14 @@ Users should be able to:
 ![](./screenshots/desktop-screenshot-850.png)
 
 #### Tablet (~768 pixels width)
-![](./screenshots/screenshot-tablet.png)
+<div align="center"><img src="./screenshots/screenshot-tablet.png" width="320" /></div>
 
 #### Cellphone (~375 pixels width)
-![](./screenshots/screenshot-cellphone.png)
+<div align="center"><img src="./screenshots/screenshot-cellphone.png" width="320" /></div>
 
 ### Links
 
-- Live Site URL: [https://oczywsziysya.github.io/fem-social-proof-section](https://oczywsziysya.github.io/fem-social-proof-section)
+- Live Site URL: [https://oczywsziysya-fem-12.netlify.app](https://oczywsziysya-fem-12.netlify.app)
 
 ## My process
 

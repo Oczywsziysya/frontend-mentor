@@ -29,23 +29,23 @@ Users should be able to:
 ### Screenshot
 
 #### Desktop
-![](./screenshots/screenshot-desktop.png)
+<div align="center"><img src="./screenshots/screenshot-desktop.png" width="320" /></div>
 
 #### Desktop (active state)
-![](./screenshots/screenshot-desktop-active.png)
+<div align="center"><img src="./screenshots/screenshot-desktop-active.png" width="320" /></div>
 
 #### Desktop (~1000 pixels width)
-![](./screenshots/screenshot-desktop-1000.png)
+<div align="center"><img src="./screenshots/screenshot-desktop-1000.png" width="320" /></div>
 
 #### Tablet (~768 pixels width)
-![](./screenshots/screenshot-tablet.png)
+<div align="center"><img src="./screenshots/screenshot-tablet.png" width="320" /></div>
 
 #### Cellphone (~375 pixels width)
-![](./screenshots/screenshot-cellphone.png)
+<div align="center"><img src="./screenshots/screenshot-cellphone.png" width="320" /></div>
 
 ### Links
 
-- Live Site URL: [https://oczywsziysya.github.io/fem-huddle-page-single-introductory-section](https://oczywsziysya.github.io/fem-huddle-page-single-introductory-section)
+- Live Site URL: [https://oczywsziysya-fem-13.netlify.app](https://oczywsziysya-fem-13.netlify.app)
 
 ## My process
 
